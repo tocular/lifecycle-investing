@@ -77,24 +77,22 @@ def plot_glide_path(df: pd.DataFrame, retirement_age: int = None) -> go.Figure:
     # Configure layout for professional appearance
     fig.update_layout(
         xaxis=dict(
-            title="Age",
+            title=dict(text="Age", font=dict(color="black")),
             showgrid=True,
             gridcolor="rgba(200, 200, 200, 0.5)",
             tickmode="linear",
             dtick=5,
             linecolor="black",
             tickfont=dict(color="black"),
-            titlefont=dict(color="black"),
         ),
         yaxis=dict(
-            title="Portfolio Weight (%)",
+            title=dict(text="Portfolio Weight (%)", font=dict(color="black")),
             showgrid=True,
             gridcolor="rgba(200, 200, 200, 0.5)",
             range=[0, 100],
             ticksuffix="%",
             linecolor="black",
             tickfont=dict(color="black"),
-            titlefont=dict(color="black"),
         ),
         legend=dict(
             orientation="h",
@@ -187,23 +185,21 @@ def plot_wealth_projection(df: pd.DataFrame, retirement_age: int = None) -> go.F
     # Configure layout with currency formatting
     fig.update_layout(
         xaxis=dict(
-            title="Age",
+            title=dict(text="Age", font=dict(color="black")),
             showgrid=True,
             gridcolor="rgba(200, 200, 200, 0.5)",
             tickmode="linear",
             dtick=5,
             linecolor="black",
             tickfont=dict(color="black"),
-            titlefont=dict(color="black"),
         ),
         yaxis=dict(
-            title="Value ($)",
+            title=dict(text="Value ($)", font=dict(color="black")),
             showgrid=True,
             gridcolor="rgba(200, 200, 200, 0.5)",
             tickformat="$,.0f",
             linecolor="black",
             tickfont=dict(color="black"),
-            titlefont=dict(color="black"),
         ),
         legend=dict(
             orientation="h",
