@@ -2,6 +2,8 @@
 
 A web application for calculating optimal portfolio allocation using the total wealth framework.
 
+**Live app:** https://lifecycle-investing.streamlit.app/
+
 ## Overview
 
 This tool helps you figure out how to allocate your investment portfolio. It uses the total wealth framework: your current assets plus the present value of future earnings, minus expected expenses.
