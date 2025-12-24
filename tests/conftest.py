@@ -1,0 +1,7 @@
+# Configure Python path for tests
+import sys
+from pathlib import Path
+
+# Add the project root to the Python path so tests can import lifecycle_app
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
