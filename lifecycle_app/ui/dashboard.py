@@ -326,7 +326,7 @@ def render_dashboard(inputs: dict) -> None:
     )
 
     glide_fig = plot_glide_path(glide_df, retirement_age=retirement_age)
-    st.plotly_chart(glide_fig, width="stretch")
+    st.plotly_chart(glide_fig, use_container_width=True)
 
     st.divider()
 
@@ -339,4 +339,4 @@ def render_dashboard(inputs: dict) -> None:
     )
 
     wealth_fig = plot_wealth_projection(projection_df, retirement_age=retirement_age)
-    st.plotly_chart(wealth_fig, width="stretch")
+    st.plotly_chart(wealth_fig, use_container_width=True)
